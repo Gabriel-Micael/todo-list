@@ -6,6 +6,8 @@ import br.edu.unifalmg.exception.*;
 import br.edu.unifalmg.repository.ChoreRepository;
 import br.edu.unifalmg.repository.impl.FileChoreRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,6 +16,8 @@ import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+@Getter
+@Setter
 public class ChoreService {
 
     private List<Chore> chores;
